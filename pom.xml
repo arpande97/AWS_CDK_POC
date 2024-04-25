@@ -10,7 +10,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <cdk.version>2.136.0</cdk.version>
-        <constructs.version>[10.0.0,11.0.0)</constructs.version>
+        <constructs.version>[1.1.0, 11.0.0)</constructs.version>
         <junit.version>5.7.1</junit.version>
     </properties>
 
@@ -50,6 +50,12 @@
             <version>${constructs.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/software.amazon.awscdk/elasticache -->
+        <dependency>
+            <groupId>software.amazon.awscdk</groupId>
+            <artifactId>elasticache</artifactId>
+            <version>0.8.0</version>
+        </dependency>
         <dependency>
           <groupId>org.junit.jupiter</groupId>
           <artifactId>junit-jupiter</artifactId>
@@ -57,4 +63,5 @@
           <scope>test</scope>
         </dependency>
     </dependencies>
+
 </project>
